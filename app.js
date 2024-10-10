@@ -14,7 +14,7 @@ function playGame(playerChoice){
     }
     else if(playerChoice === "Paper"){
         if(computerMove === "Rock"){
-            result = "You win!"
+            result = "You Win!"
         }else{
             result = "You Loose"
         }
@@ -23,7 +23,7 @@ function playGame(playerChoice){
         if(computerMove === "Rock"){
             result = "You Loose"
         }else{
-            result = "You win!"
+            result = "You Win!"
         }
     }
     let playerMove = document.getElementById('playerMove');
@@ -34,7 +34,7 @@ function playGame(playerChoice){
     gameResults.innerHTML = result
 
     switch (result){
-        case "You win!":
+        case "You Win!":
             gameResults.style.color = 'green';
             break;
         case "You Loose":
